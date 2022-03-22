@@ -24,7 +24,6 @@ jobs:
           key: ${{ runner.os }}-build-cache-node-modules-${{ hashFiles('**/package.json') }}
           restore-keys: |
             cache-node-modules-
-
       - name: Run ci
         run: |
           npm install
